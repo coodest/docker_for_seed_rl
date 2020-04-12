@@ -2,7 +2,7 @@ FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 MAINTAINER Heptagram <350526878@qq.com>
 
 # Install basic dependencies
-RUN apt-get install -y tzdata
+RUN apt-get update && apt-get install -y --no-install-recommends tzdata
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         cmake \
