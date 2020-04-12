@@ -2,7 +2,8 @@ FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 MAINTAINER Heptagram <350526878@qq.com>
 
 # Install basic dependencies
-RUN DEBIAN_FRONTEND="noninteractive" apt-get -y --no-install-recommends install tzdata
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get -y install tzdata
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         cmake \
