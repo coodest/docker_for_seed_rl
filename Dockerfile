@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         x11vnc \
         libsdl-sge-dev \
         libboost-python-dev \
+        python-dev \
+        python3-dev \
         tmux \
         curl \
         zip \
