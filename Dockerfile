@@ -60,8 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         checkinstall \
         libmp3lame-dev \
         libunwind-dev \
-        libssl-dev \
-        libavcodec-extra-53
+        libssl-dev
 
 # Install bazel
 RUN echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | \
